@@ -2,7 +2,9 @@
 body{
 	font-family: "Helvetica Neue", Helvetica, Arial, 'Roboto Condensed', sans-serif;;
 	font-size: 14px;
+	background-color: #dddddd;
 }
+
 .navbar {
 	padding-top: 10px;
 	position: relative;
@@ -84,10 +86,11 @@ body{
 	width: 70%;
 	border: 1px solid black;
 	border-radius: 15%;
+	background-color: #4d0099;
 }
 
 .subtitle {
-	position: inherit;
+	position: relative;
 	color: #4d0099;
 	font-size: 20px;
 	font-family: 'Roboto Condensed', sans-serif !important;
@@ -109,9 +112,72 @@ section.inner h3, h1 {
 	text-transform: uppercase;
 	font-size: 48px;
 	font-weight: 700;
+	margin-bottom: 40px;
+	margin-top: 40px;
 }
 
 section.inner h2 {
   font-family: 'Spectral SC', serif;
 	text-transform: uppercase;
+	padding-top: 20px;
+}
+
+.separator hr {
+	border: 0;
+	width: 25%;
+	color: #4d0099;
+	background-color: #4d0099;
+	height: 5px;
+	margin-top: 100px;
+	border-radius: 50%;
+}
+
+#recent-work h3 {
+	padding-left: 8.5em;
+}
+
+
+a {
+	color: #4d0099;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 400;
+	text-decoration: underline;
+}
+
+.img-responsive {
+	vertical-align: middle;
+	border: 0;
+	border-radius: 5%;
+}
+
+/* img hover zoom effect */
+.zoomImage {
+	width: 555px;
+	height: 371px;
+	overflow: hidden;
+	text-align: center;
+	border: 0;
+	border-radius: 5%;
+	position: relative;
+}
+
+.zoomImage img{
+  position: relative;
+	max-width: 100%;
+	max-height: 100%;
+	transition: .45s;
+	overflow: hidden;
+}
+
+.content {
+	position: absolute;
+	top: 20px;
+}
+.zoomImage:hover img{
+	transform: scale(1.2);
+}
+
+/* COMMON CLASSES */
+.primary-text{
+	color: #4d0099;
 }
