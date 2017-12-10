@@ -1,27 +1,62 @@
 
 body{
-	font-family: "Helvetica Neue", Helvetica, Arial, 'Roboto Condensed', sans-serif;;
+	font-family: "Helvetica Neue", Helvetica, Arial, 'Roboto Condensed', sans-serif;
 	font-size: 14px;
+	height: 400px;
+	background-color: #dddddd;
+}
+
+.content{
+	position: relative;
+	top: 0;
+	padding-top: 200px;
+	height: 200px;
 	background-color: #dddddd;
 }
 
 .navbar {
-	padding-top: 10px;
-	position: relative;
-	min-height: 50px;
-	margin-bottom: 20px;
+	border: 0;
+	border-radius: 0;
+	height: 80px;
+	position: fixed;
 	width: 100%;
-	border-bottom: 1px solid black;
-	height: 5.5em;
+	z-index: 500;
+	background: #fff;
+  margin-bottom: 70px;
+  overflow: hidden;
+   box-shadow: 0 2px 3px rgba(0,0,0,.4);
+ }
+
+.Mad {
+	padding-top: 100px;
+
+}
+.Mad ul li{
+	position: relative;
+	display: inline;
+	padding: 25px;
+	color:  #4d0099;
+	font-size: 24px;
+	font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+ .mainHeader {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight:bolder;
+	position: relative;
+	bottom:0.5em;
+	right:8em;
 }
 
 .navbar-right {
 	float: right !important;
-	margin-right: -15px;
+	margin-right: -17em;
 }
 
 .navbar-nav li > a {
 	position: relative;
+	bottom: 3.5em;
 	text-decoration: none;
 	color: #08182D;
 	font-family: 'Quicksand', sans-serif !important;
@@ -55,11 +90,9 @@ body{
 
 .logo {
 	position: relative;
-	bottom: 1.3em;
-	width: 70%;
-	border: 1px solid black;
-	border-radius: 15%;
-	background-color: #4d0099;
+	right: 10em;
+	bottom: .5em;
+	width: 40%;
 }
 
 .subtitle {
@@ -76,11 +109,7 @@ body{
 	box-sizing: border-box;
 }
 
-section {
-	padding-top: 40px;
-}
-
-section.inner h3, h1 {
+.inner h3, h1 {
 	font-family: 'Roboto Condensed', sans-serif;
 	text-transform: uppercase;
 	font-size: 48px;
@@ -89,16 +118,15 @@ section.inner h3, h1 {
 	margin-top: 40px;
 }
 
-section.inner h2 {
+.inner h2 {
   font-family: 'Spectral SC', serif;
 	text-transform: uppercase;
 	padding-top: 20px;
 }
 
-.separator hr {
+hr {
 	border: 0;
-	width: 25%;
-	color: #4d0099;
+	width: 50%;
 	background-color: #4d0099;
 	height: 5px;
 	margin-top: 100px;
@@ -106,7 +134,7 @@ section.inner h2 {
 }
 
 #recent-work h3 {
-	padding: 2em 2em;
+	padding: 2em 4em;
 }
 
 a {
@@ -123,7 +151,7 @@ a {
 	overflow: hidden;
 	text-align: center;
 	border: 0;
-	border-radius: 50%;
+	border-radius: 1%;
 	position: relative;
 	margin:15px;
 }
