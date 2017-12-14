@@ -10,7 +10,8 @@ _This website is my portfolio featuring recent projects I have done as well as m
 
 ## Setup/Installation Requirements
 
-* _Open the application in Mozilla FireFox or Google Chrome to view._
+* _go to gh-pages at https://clantigua2.github.io/my-portfolio/ to view the site.
+_Open the application in Mozilla FireFox or Google Chrome to view._
 _click the navbar to jump around the site or get in contact with me through the footer bar located at the bottom.
 _you can also view my recent projects in the "recent projects" section of the site.
 
