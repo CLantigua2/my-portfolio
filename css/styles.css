@@ -2,15 +2,17 @@
 body{
 	font-family: "Helvetica Neue", Helvetica, Arial, 'Roboto Condensed', sans-serif;
 	font-size: 14px;
-	height: 400px;
+	height: 380px;
+	width: 100% auto;
 	background-color: #dddddd;
 }
 
 .content{
 	position: relative;
-	top: 0;
-	padding-top: 200px;
+	top: 2%;
+	margin-top: 20%;
 	height: 200px;
+	width: 100%;
 	background-color: #dddddd;
 }
 
@@ -19,10 +21,11 @@ body{
 	border-radius: 0;
 	height: 80px;
 	position: fixed;
+	top: 0;
 	width: 100%;
 	z-index: 500;
 	background: #fff;
-  margin-bottom: 70px;
+  margin-bottom: 10px;
   overflow: hidden;
    box-shadow: 0 2px 3px rgba(0,0,0,.4);
  }
@@ -30,26 +33,23 @@ body{
 .Mad ul{
 	position: relative;
 	top: 0;
-	right: 6em;
-	padding-top: 150px;
-	padding-bottom: 100px;
+	right: 0%;
+	padding-top: 10%;
+	padding-bottom: 10%;
 	list-style-type: none;
 	list-style: none;
-	width: 900px;
+	width: 100%;
+	display: inline-block;
+
 }
 
 .Mad ul li{
 	position: relative;
-	display: inline;
-	padding: 25px;
+	float: left;
+	padding-left: 40px;
 	color:  #4d0099;
 	font-size: 24px;
 	font-family: 'Roboto Condensed', sans-serif;
-}
-
-.header h1 {
-	padding: 25px;
-	padding-bottom: 100px;
 }
 
  .mainHeader {
@@ -61,8 +61,10 @@ body{
 }
 
 .navbar-right {
-	float: right !important;
-	margin-right: -17em;
+	position: relative;
+	left: 100%;
+	right: auto;
+	margin-left: 15em;
 }
 
 .navbar-nav li > a {
@@ -106,13 +108,16 @@ body{
 	width: 40%;
 }
 
-.subtitle {
+
+.whatIDo h2{
 	position: relative;
-	color: #4d0099;
-	font-size: 20px;
-	font-family: 'Roboto Condensed', sans-serif !important;
-	text-transform: uppercase;
+	display: inline-block;
+	left: 100% auto;
+	right: 100% auto;
+	top: 0;
+	padding: 10%;
 }
+
 
 ::after,::before {
 	webkit box-sizing: border-box;
@@ -121,31 +126,55 @@ body{
 }
 
 .inner h3, h1 {
+	position: relative;
+	left: 100% auto;
+	right: 100% auto;
 	font-family: 'Roboto Condensed', sans-serif;
 	text-transform: uppercase;
 	font-size: 48px;
 	font-weight: 700;
-	margin-bottom: 40px;
-	margin-top: 40px;
+	margin-bottom: 10%;
+	margin-top: 5%;
 }
 
 .inner h2 {
   font-family: 'Spectral SC', serif;
 	text-transform: uppercase;
-	padding-top: 20px;
+	padding-top: 10%;
 }
 
-hr {
+.separator hr {
+	position: relative;
+	top: 0;
+	margin-top: 0;
+	margin-bottom: 0%;
 	border: 0;
-	width: 50%;
+	width: 100%;
 	background-color: #4d0099;
 	height: 5px;
-	margin-top: 100px;
+	border-radius: 50%;
+}
+
+.separator2 hr {
+	position: relative;
+	top: 0em;
+	margin-top: 5%;
+	margin-bottom: 20px;
+	border: 0;
+	width: 100%;
+	background-color: #4d0099;
+	height: 5px;
 	border-radius: 50%;
 }
 
 #recent-work h3 {
-	padding: 2em 4em;
+	position: relative;
+	display: inline-block;
+	top:7em;
+	bottom: 0;
+	left: 50% auto;
+	right: 50% auto;
+	padding: 8em 5%;
 }
 
 a {
@@ -157,27 +186,30 @@ a {
 
 /* img hover zoom effect */
 .zoomImage {
+	position: relative;
+	display: inline-block;
 	width: 555px;
 	height: 371px;
 	overflow: hidden;
 	text-align: center;
 	border: 0;
 	border-radius: 1%;
-	position: relative;
-	margin:15px;
+	margin:1%;
+	box-shadow: 0 4px 3px rgba(0,0,0,.4);
 }
 
 .zoomImage img{
   position: relative;
+	display: inline-block;
 	max-width: 100%;
 	max-height: 100%;
 	transition: .45s;
 	overflow: hidden;
 }
 
-
 .zoomImage:hover img{
 	transform: scale(1.2);
+	display: inline-block;
 }
 
 /* COMMON CLASSES */
@@ -185,9 +217,8 @@ a {
 	color: #4d0099;
 }
 
-.row.about {
-	padding-top: 80px;
-
+.about {
+	padding-top: 5%;
 }
 
 .col-md-push-1 {
@@ -202,29 +233,29 @@ footer {
 	float: right !important;
 }
 
-.col-md-10{
-	width: 100%
-}
-
 .footer-links {
-	padding-top: 40px;
+	padding-top: 1%;
 	position: relative;
-	min-height: 50px;
-	margin-top: 10em;
-	padding-left: 34.3em;
-	margin-bottom: 3em;
+	margin-top: 10%;
+	padding-left: 0%;
+	margin-bottom: .2%;
 	width: 100%;
 	border-top: 1px solid black;
-	height: 2.5em;
+	height: 5%;
+}
+
+.footer-links ul{
+	width: 100%;
+	background-color: #000;
 }
 
 .footer-links li {
 	text-decoration: none;
 	display: inline;
 	width: 100%;
-	padding-bottom: 20px;
-	margin: 20px;
-	position: relative;
+	padding-bottom: 0.5%;
+	margin: 2%;
+	position: inherit;
 	text-decoration: none;
 	color: #08182D;
 	font-family: 'Quicksand', sans-serif !important;
@@ -244,7 +275,7 @@ footer {
 	content: "";
 	position: absolute;
 	width: 100%;
-	height: 2px;
+	height: 3px;
 	bottom: 0;
 	left: 0;
 	background-color: #4d0099;
@@ -263,15 +294,31 @@ footer {
 
 .theEnd #about h1 {
 	position: relative;
-	margin-top: 300px;
+	margin-top: 0px;
 }
 
 .theEnd #about h2 {
 	position: relative;
-	margin-top: 50px;
-	width: 600px;
+	margin-top: 10%;
+	width: 100%;
 }
 
-.createdBy {
-	float: right;
+
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+}
+
+@media display and (max-width: 1000px){
+	.zoomImage img{
+		position: relative;
+		display: inline-block;
+		width: 277px;
+		height: 186px;
+		overflow: hidden;
+		text-align: center;
+		border: 0;
+		border-radius: 1%;
+	}
 }
